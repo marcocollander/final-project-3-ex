@@ -1,0 +1,44 @@
+.header {
+  @include wrapper(1120px, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: 3.2rem;
+    font-family: $font-family-primary;
+  }
+
+  &__image {
+    margin: 50px 0;
+    width: 100%;
+  }
+
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: $font-family-secondary;
+    font-size: 1.4rem;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgc-btn-action;
+    margin: 50px auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: $light-color;
+    font-family: $font-family-secondary;
+    letter-spacing: 1px;
+  }
+}
